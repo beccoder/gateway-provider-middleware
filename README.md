@@ -41,3 +41,8 @@ All Provider calls are stubbed in tests.
 bundle install
 bundle exec rails server
 bundle exec rspec
+```
+
+Actually, after golang, I was going to learn one of high level, dynamic languages and I really liked Ruby on Rails. I see it as a good language to realise MVPs, start-up projects faster. So, I want to continue on this mini project. In the next versions, I want to do the improvements I mentioned above. 
+
+Upcoming: Error handling and data validation. 
