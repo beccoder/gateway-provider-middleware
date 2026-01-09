@@ -11,14 +11,14 @@ class ProviderClient
     request["Content-Type"] = "application/json"
     request.body = payload.to_json
 
-    perform_request(uri, request)
+    perform_request(uri, request) # returning response from provider
   end
 
   def authorize_transaction(transaction_id)
     uri = URI("#{PROVIDER_BASE_URL}/transactions/auth/#{transaction_id}")
     request = Net::HTTP::Put.new(uri)
 
-    perform_request(uri, request)
+    perform_request(uri, request) # returning response from provider
   end
 
   private
