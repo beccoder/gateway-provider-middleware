@@ -14,6 +14,6 @@ class Gateway::TransactionsController < ApplicationController
   private
 
   def transaction_params
-    params.require(:transaction).permit(:amount, :currency, :id)
+    params.permit(:amount, :currency, :id)
   end
 end
